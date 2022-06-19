@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App Academy Times</title>
+        <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet">
+        <link href="./stylesheets/main-styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="masthead">
+                <div id="menu">
+                    <div id="button">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div id="button">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="search-modal search-modal--hidden">
+                        <input type="search" class="search-modal__input" placeholder="Search">
+                        <button class="search-model__go">Go</button>
+                      </div>
+                </div>
+                <div id="actions">
+                    <div>
+                        <button>Subscribe Now</button>
+                    </div>
+                    <div>
+                        <button>Log in</button>
+                    </div>
+                    <div id="button">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+                <div id="code">
+                    <span class="tech left">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">Javascript</span>
+                    <span class="tech right">Python</span>
+                </div>
+                <div id="date">
+                    <div>Tuesday, October 31, 2020</div>
+                </div>
+                <div id="logo"> <img src="./images/AA_Times_Logo.png" alt="App Academy Times Logo"> </div>
+                <div id="paper">
+                    <div>
+                        <i class="far fa-newspaper"></i>
+                    </div>
+                    <div id="text">Today's Paper</div>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html">World</a></li>
+                    <li><a href="index.html">SWE Online</a></li>
+                    <li><a href="index.html">San Francisco</a></li>
+                    <li><a href="index.html">New York</a></li>
+                    <li><a href="index.html">Jumpstart</a></li>
+                    <li><a href="index.html">Marketing</a></li>
+                    <li><a href="index.html">Sales</a></li>
+                    <li><a href="index.html">TalentMatch</a></li>
+                    <li><a href="index.html">Alumni</a></li>
+                    <li><a href="index.html">All</a></li>
+                </ul>
+            </nav>
+
+            <div class="interest">
+                <div id='img'><img src="./images/dog.png" alt="dog"></div>
+                <div id="text">
+                    <div id="first">
+                        Dog Programmers
+                    </div>
+                    <div>
+                        Dogs are learning to code at an incredible pace.
+                    </div>
+                </div>
+                <div id='img'><img src="./images/cat.png" alt="cat"></div>
+                <div id="text">
+                    <div id="first">
+                        Cats and Coding
+                    </div>
+                    <div>
+                        Cats are on the rise as the #1 example for coding demos.
+                    </div>
+                </div>
+                <div id='img'><img src="./images/plug.png" alt="plug"></div>
+                <div id="text">
+                    <div id="first">
+                        Plugging Stuff In
+                    </div>
+                    <div>
+                        Good or Bad? Find out now.
+                    </div>
+                </div>
+                <div id="stocks">
+                    <div id="left">
+                        <div>AAO</div>
+                        <div>SWE</div>
+                        <div>CAT</div>
+                    </div>
+                    <div id="right">
+                        <div>+100%</div>
+                        <div>+150%</div>
+                        <div>+111%</div>
+                    </div>
+                </div>
+                <div id="img"><img src="./images/sun-icon.png" alt="sun"></div>
+                <div id="temp"><div>77°F</div></div>
+            </div>
+
+            <div class="pref pref--hidden">
+                <div class="pref__section">
+                  <div class="pref__section-header">Edition</div>
+                  <ul>
+                    <li class="pref__section-link"><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a></li>
+                    <li class="pref__section-link"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+                    <li class="pref__section-link"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
+                    <li class="pref__section-link"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a></li>
+                  </ul>
+                </div>
+                <div class="pref__section">
+                  <div class="pref__section-header">Help</div>
+                  <ul>
+                    <li class="pref__section-link"><a href="./index.html">FAQ</a></li>
+                    <li class="pref__section-link"><a href="https://www.appacademy.io/" target="_blank">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <script src="./scripts/event-handling.js"></script>
+
+        </header>
+
+        <main>
+            <div class="leftSide">
+                <div class="leftTop">
+                    <div class="ltTop">
+                        <div>How App Academy Students Change Their Lives</div>
+                    </div>
+                    <div class="ltBottom">
+                        <article id="ltbLeft">
+                            <div id="title"> App Academy Instructors on React & Redux </div>
+                            <div id="by"> By APP ACADEMY INSTRUCTIONAL TEAM</div>
+                            <ul>
+                                <li>
+                                    It helps you write applications that behave consistently, run in different environments
+                                    (client, server, and native), and are easy to test. On top of that, it provides a great developer
+                                    experience, such as live code editing combined with a time traveling debugger.
+                                </li>
+                                <li>
+                                    The whole state of your app is stored in an object tree inside a single store.
+                                    The only way to change the state tree is to emit an action, an object describing what happened.
+                                    To specify how the actions transform the state tree, you write pure reducers.
+                                </li>
+                            </ul>
+                            <div><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">1738 Comments</a></div>
+                        </article>
+                        <div id="ltbRight">
+                            <iframe src="https://player.vimeo.com/video/380193367" width="480"
+                            height="280" frameborder="0" allow="autoplay; fullscreen"
+                            allowfullscreen></iframe>
+                            <div>
+                                Warning: This video will make you want to change your career
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftBottom">
+                    <article id="blLeft">
+                        <div id="title">Where Are They Now?</div>
+                        <div id="by">By APP ACADEMY ALUMNI</div>
+                        <p>First hand stories from App Academy graduates about transitioning to engineering positions at
+                         top tech companies in San Francisco.</p>
+                    </article>
+                    <article id="blRight">
+                        <div id="title">Cat Academy</div>
+                        <div id="by">By APP ACADEMY DIRECTOR OF PRODUCTS</div>
+                        <p>App Academy's latest product targets those interested in owning the popular feline companion by
+                        providing a curated cat care curriculum. Breakfast, Markov, Curie, Jet, and Freyja are all modern day
+                        celebrities due to their App Academy example fame.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="rightSide">
+                <article id="top">
+                    <div id="title1">Opinions</div>
+                    <div id="by">By Breakfast the Cat</div>
+                    <div id="title">Will Javascript ever be as easy as Python?</div>
+                    <p>JavaScript continues to advance with the newly released EcmaScript8 but it
+                    still doesn't quite read like Python.</p>
+                    <div><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">299 Comments</a></div>
+                </article>
+                <article id="mid">
+                    <div id="title1">OPERATIONS</div>
+                    <div id="title">App Academy New York Has A Brand New Office</div>
+                    <div id="by">By NY OPERATIONS</div>
+                    <img src="./images/new_office.jpg" alt="new office space">
+                    <p>The new space features hardwood floors and brick walls for a modern technology
+                    space with an aura for learning.</p>
+                    <div><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">172 Comments</a></div>
+                </article>
+                <div id="bot">
+                    <div id="bLeft">
+                        <article>
+                            <div id="by">Torvalds:</div>
+                            <div id="title">When I Was Almost Wrong</div>
+                        </article>
+                        <article>
+                            <div id="by">Knuth:</div>
+                            <div id="title">Art of Programming</div>
+                        </article>
+                        <article>
+                            <div id="by">Lovelace:</div>
+                            <div id="title">The First Algorithm</div>
+                        </article>
+                        <article>
+                            <div id="by">Hopper:</div>
+                            <div id="title">The First Bug</div>
+                        </article>
+                    </div>
+                    <div id="bRight">
+                        <article>
+                            <div id="by">Thompson:</div>
+                            <div id="title">Go C Unix</div>
+                        </article>
+                        <article>
+                            <div id="by">Carmack:</div>
+                            <div id="title">My Virtual Reality</div>
+                        </article>
+                        <article>
+                            <div id="by">Stallman:</div>
+                            <div id="title">Free Speech Not Free Coffee</div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>

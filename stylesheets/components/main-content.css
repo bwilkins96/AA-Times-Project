@@ -1,0 +1,231 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-areas: "left right";
+
+    font-size: 12px;
+}
+
+main .leftSide {
+    grid-area: left;
+
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+
+    grid-template-areas:
+    "leftTop"
+    "leftBottom";
+}
+
+main .leftSide .leftTop {
+    grid-area: leftTop;
+
+    display: grid;
+    grid-template-rows: 10% 90%;
+
+    grid-template-areas:
+    "ltTop"
+    "ltBottom";
+}
+
+main .leftSide .leftTop .ltTop {
+    grid-area: ltTop;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+
+    line-height: 1em;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+main .leftSide .leftTop .ltBottom {
+    grid-area: ltBottom;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas:
+    "ltbLeft ltbRight"
+    ;
+}
+
+main .leftSide .leftTop .ltBottom #ltbLeft {
+    grid-area: ltbLeft;
+}
+
+main .leftSide .leftTop .ltBottom #ltbRight {
+    grid-area: ltbRight;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .leftSide ul {
+    list-style: circle;
+    padding-bottom: 5px;
+}
+
+main .leftSide ul li {
+    padding-bottom: 10px;
+    margin-right: 5px;
+}
+
+main .leftSide .leftBottom {
+    grid-area: leftBottom;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas: "blLeft blRight";
+
+    margin-top: 10px;
+    padding-top: 5px;
+
+    border-top: 2px solid #6f6f6f;
+    border-bottom: 2px solid #6f6f6f;
+}
+
+main .leftSide .leftBottom #blLeft {
+    grid-area: blLeft;
+}
+
+main .leftSide .leftBottom #blRight {
+    grid-area: blRight;
+    border-left: 1px solid #efefef;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+main .rightSide {
+    grid-area: right;
+
+    display: grid;
+    grid-template-rows: 33% 50% 33%;
+
+    grid-template-areas:
+    "top"
+    "mid"
+    "bot"
+    ;
+
+    border-left: 1px solid #efefef;
+    padding-left: 5px;
+}
+
+main .rightSide #top {
+    grid-area: top;
+
+}
+
+main .rightSide #mid {
+    grid-area: mid;
+
+}
+
+main .rightSide #bot {
+    grid-area: bot;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: "bLeft bRight";
+}
+
+main .rightSide #bot #bLeft {
+    grid-area: bLeft;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    border-right: 1px solid #efefef;
+}
+
+main .rightSide #bot #bRight {
+    grid-area: bRight;
+
+    grid-template-rows: 1fr 1fr 1fr;
+
+    border-left: 1px solid #efefef;
+    padding-left: 2px;
+}
+
+main .rightSide #bot article {
+    border-top: 1px solid #efefef;
+}
+
+main #title {
+    font-weight: bold;
+}
+
+main #ltbLeft #title {
+    font-size: 20px;
+    line-height: 1em;
+
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+main .leftBottom #title {
+    font-size: 15px;
+    padding-bottom: 5px
+}
+
+main #by {
+    color: rgb(150,150,150);
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
+main a {
+    color: blue;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main .rightSide #title1 {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+main .rightSide #top #title1 {
+    margin-top: 5px;
+    font-size: 22px;
+    line-height: 1em;
+}
+
+main .rightSide #mid #title1 {
+    font-size: 11px;
+    text-transform: uppercase;
+    border-top: 1px solid #efefef;;
+}
+
+main .rightSide #title {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+main .rightSide p {
+    padding-bottom: 10px;
+}
+
+main .rightSide #bot #title {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+    main .rightSide {
+        display: none;
+    }
+
+    main {
+     grid-template-columns: 1fr;
+    }
+}
